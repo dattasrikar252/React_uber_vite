@@ -1,0 +1,129 @@
+/* Profile Page Container */
+.profile-container {
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 50px;
+    padding: 20px;
+  }
+  
+  /* Profile Sidebar */
+  .profile-sidebar {
+    flex: 0 0 25%;
+    border-right: 1px solid #ccc;
+    padding: 20px;
+  }
+  
+  /* Profile Header */
+  .profile-header {
+    text-align: center;
+  }
+  
+  .profile-image {
+    border-radius: 50%;
+    width: 150px;
+    margin-bottom: 20px;
+  }
+  
+  .profile-details {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .profile-email {
+    color: #888888;
+    margin-bottom: 10px;
+  }
+  
+  /* Profile Menu */
+  .profile-menu {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .profile-menu-item {
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .profile-menu-item:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .active {
+    background-color: #f0f0f0;
+  }
+  
+  /* Profile Content */
+  .profile-content {
+    flex: 0 0 75%;
+    padding-left: 20px;
+    overflow-y: auto;
+  }
+  
+  /* Profile Form */
+  .profile-form {
+    width: 80%;
+    /* Add styles for the form */
+  }
+  
+  .profile-title {
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  
+  .profile-button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .my-form-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+  }
+  
+  .my-form-row {
+    
+    margin-bottom: 15px;
+  }
+  
+  .my-label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .my-input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+  }
+
+  /* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .profile-container {
+      flex-direction: column;
+    }
+  
+    .profile-sidebar {
+      border-right: none;
+      margin-bottom: 20px;
+    }
+  
+    .profile-content {
+      width: 100%;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .profile-form {
+      padding: 0 10px;
+    }
+  }
+  
+  

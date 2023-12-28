@@ -1,0 +1,105 @@
+/* Navbar.css */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 1rem;
+    color: white;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 1rem;
+    justify-content: center; /* Center the links horizontally */
+    align-items: center; /* Center the links vertically */
+    flex-grow: 1;
+  }
+  
+  .nav-links1 {
+    display: flex;
+    gap: 1rem;
+  
+  }
+  .nav-links1 a {
+    text-decoration: none;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .nav-links1 a:hover {
+    background-color: #555;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .nav-links a:hover {
+    background-color: #555;
+  }
+  @media screen and (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: stretch; /* Stretch items vertically in mobile view */
+      padding: 0.5rem; /* Adjust the padding for a more compact navbar */
+    }
+  
+    .logo {
+      order: 1; /* Move the logo to the top in mobile view */
+      margin-bottom: 0.5rem; /* Add less space between logo and menu */
+    }
+  
+    .nav-links,
+    .nav-links1 {
+      order: 2; /* Move the menu to the bottom in mobile view */
+      flex-direction: column;
+      align-items: stretch;
+      display: none;
+      margin-top: 0.5rem; /* Add less space above the menu */
+    }
+  
+    .navbar.active .nav-links,
+    .navbar.active .nav-links1 {
+      display: flex;
+    }
+  
+    .hamburger-menu {
+      order: 3; /* Move the hamburger menu to the bottom in mobile view */
+      display: flex;
+      flex-direction: column;
+      cursor: pointer;
+      align-items: flex-end; /* Align the menu button to the right */
+    }
+  
+    .hamburger-menu div {
+      width: 25px;
+      height: 3px;
+      background-color: white;
+      margin: 4px 0; /* Adjust the margin for a more compact menu icon */
+      transition: 0.4s;
+    }
+  
+    .navbar.active .hamburger-menu div:nth-child(1) {
+      transform: rotate(-45deg) translate(-5px, 6px);
+    }
+  
+    .navbar.active .hamburger-menu div:nth-child(2) {
+      opacity: 0;
+    }
+  
+    .navbar.active .hamburger-menu div:nth-child(3) {
+      transform: rotate(45deg) translate(-5px, -6px);
+    }
+  }

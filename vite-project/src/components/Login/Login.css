@@ -1,0 +1,108 @@
+.container {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    height: 100%;
+    background-color: #F7F7F7;
+    /* padding: 10px; */
+}
+
+.image-container {
+    flex: 2;
+    /* padding: 10px; */
+    display: flex;
+    height: 630px;
+}
+
+.login-container {
+    flex: 1;
+    padding: 15px;
+    /* border: 1px solid #ccc; */
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-container input {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 20px; /* Adding curve shape */
+}
+
+/* Style for the login button */
+.button1 {
+    width: 100px;
+    padding: 10px;
+    margin-right: 60px;
+    border: none;
+    border-radius: 20px;
+    background-color: gold;
+    color: black;
+    cursor: pointer;
+    align-items: center;
+}
+
+.Login{
+    background-color: gold;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px; 
+    cursor: pointer;
+    margin-right: 10px;
+  
+  }
+  .User{
+    background-color: gold;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px; 
+    cursor: pointer;
+    margin-right: 10px;
+  }  
+.registration-link {
+    color: blue; /* You can set your desired color */
+    cursor: pointer;
+    text-decoration: underline;
+    /* Add any additional styling you want for the registration link */
+}
+
+.button1:hover {
+    background-color: grey;
+}
+
+.image {
+    width: 100%;
+}
+
+.new-user-link {
+    text-align: left;
+}
+
+.new-user-link a,
+.new-rider-link a {
+    color: gray;
+    text-decoration: none;
+}
+
+/* Additional styles for responsiveness */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: stretch; /* Stretch items to full width */
+    }
+
+    .image-container {
+        /* flex: 1; 
+        max-width: 100%; */
+        display: none;
+    }
+
+    .login-container {
+        flex: 1; /* Adjust the flex value as needed */
+        max-width: 100%;
+    }
+}
